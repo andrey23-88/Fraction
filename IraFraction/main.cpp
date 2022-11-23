@@ -1,4 +1,4 @@
-#include<iostream>
+п»ї#include<iostream>
 using std::cin;
 using std::cout;
 using std::endl;
@@ -36,7 +36,7 @@ public:
 		this->denominator = denominator;
 	}
 	//Constructor:
-	Fraction()//перегрузка конструктора
+	Fraction()//РїРµСЂРµРіСЂСѓР·РєР° РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 	{
 		this->integer = 0;
 		this->numerator = 0;
@@ -50,7 +50,7 @@ public:
 		this->numerator = 0;
 		this->denominator = 1;
 		cout.width(WIDTH);
-		cout <<std::left<< "SingleArgumentConstructor:" << this << endl;// конструктор с одним параметром
+		cout <<std::left<< "SingleArgumentConstructor:" << this << endl;// РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РѕРґРЅРёРј РїР°СЂР°РјРµС‚СЂРѕРј
 
 	}
 	Fraction(int numerator,int denominator)
@@ -65,7 +65,7 @@ public:
 	{
 		this->integer = integer;
 		this->numerator = numerator;
-		set_denominator(denominator);//фильтрация даннных
+		set_denominator(denominator);//С„РёР»СЊС‚СЂР°С†РёСЏ РґР°РЅРЅРЅС‹С…
 		cout << "Constructor:\t" << this << endl;
 	}
 	~Fraction()
@@ -91,7 +91,7 @@ public:
 		{
 			cout << numerator << "/" << denominator;
 		}
-		else if (integer == 0)cout << 0;//если нет дробной части то выводим о
+		else if (integer == 0)cout << 0;//РµСЃР»Рё РЅРµС‚ РґСЂРѕР±РЅРѕР№ С‡Р°СЃС‚Рё С‚Рѕ РІС‹РІРѕРґРёРј Рѕ
 		cout << endl;
 	}
 
@@ -102,7 +102,7 @@ void main()
 {
 	setlocale(LC_ALL, "");
 #ifdef CONSTRUCTORS_CHEK
-	Fraction A;//конструктор по умолчанию
+	Fraction A;//РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ
 	A.print();
 
 	Fraction B = 5;// Single -argument constructor
